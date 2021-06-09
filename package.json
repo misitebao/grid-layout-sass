@@ -1,0 +1,32 @@
+{
+  "name": "grid-system",
+  "version": "1.0.0",
+  "description": "Grid System | 栅格系统",
+  "main": "index.js",
+  "directories": {
+    "example": "example",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm-run-all --parallel build:**",
+    "build:flex": "stylus -o dist ./src/layout_flex.stylus",
+    "build:float": "stylus -o dist ./src/layout_float.stylus",
+    "build:grid": "stylus -o dist ./src/layout_grid.stylus"
+  },
+  "keywords": [
+    "css",
+    "grid-system",
+    "栅格系统"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/misitebao/grid-system.git"
+  },
+  "author": "i@misitebao.com",
+  "license": "ISC",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "stylus": "^0.54.8"
+  }
+}
